@@ -9,6 +9,9 @@
 // }
 
 
+
+
+
 function scrollAppear() {
   var introText = document.querySelector('.side-text');
   var sideImage = document.querySelector('.sideImage');
@@ -178,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let start = 0;
     const end = parseInt(element.dataset.count);
     const increment = Math.ceil(end / 100); // smooth step
-    const duration = 3500; // 2 second total
+    const duration = 2000; // 2 second total
     const stepTime = duration / (end / increment);
 
     const counter = setInterval(() => {
@@ -210,3 +213,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", triggerAnimationIfVisible);
 });
+
+  
+
