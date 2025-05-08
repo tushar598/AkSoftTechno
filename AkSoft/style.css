@@ -137,6 +137,8 @@ button {
   transform: translateY(-50px);
 }
 .quote h5 {
+  letter-spacing: 2px;
+  word-spacing: 2px;
   font-size: 1em;
   margin-top: 20px;
   color: #0009;
@@ -445,8 +447,6 @@ div.card.modified-card:hover {
   gap: 2em;
 }
 
-
-
 /*TEAM SECTION*/
 .totalcard {
   width: 100%;
@@ -682,8 +682,8 @@ form textarea {
 }
 .rev-container .rev-card {
   /*overflow: hidden;*/
-  width: 550px;
-  height: 240px;
+  width: 467px;
+  height: 226px;
   margin-bottom: 40px;
   background: #fff;
   display: flex;
