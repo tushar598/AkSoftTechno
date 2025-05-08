@@ -442,8 +442,9 @@ div.card.modified-card:hover {
 .course {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 4em;
   gap: 2em;
 }
 
@@ -968,6 +969,10 @@ footer .btn:hover {
   }
   .title {
     margin-top: 120px;
+  }
+
+  .course {
+    justify-content: center;
   }
 }
 @media screen and (max-width: 700px) {

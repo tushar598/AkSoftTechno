@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="shortcut icon"
+      type="png"
+      href="../img/aksoft_logo-removebg-preview.png"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Comaptible" content="IE=edge" />
+    <title>Home | AKSoftechno</title>
+    <meta name="desciption" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="course.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <script type="text/javascript" src="./Course.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header id="header">
+      <nav>
+        <div class="logo">
+          <img src="../img/logo-bg-removed.png" alt="logo" />
+        </div>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a href="../index.html#Course_section">Courses</a>
+          </li>
+          <li><a href="#">Placement</a></li>
+          <li><a href="../index.html#about_section">About Us</a></li>
+          <li><a href="../index.html#contactus_section">Contact US</a></li>
+        </ul>
+        <!-- <div class="srch">
+          <input type="text" class="search" placeholder="Search here..." /><img
+            src="images/icon/search.png"
+            alt="search"
+            onclick="slide()"
+          />
+        </div> -->
+        <a class="get-started" href="login.html">Get Started</a>
+        <img
+          src="../images/icon/menu.png"
+          class="menu"
+          onclick="sideMenu(0)"
+          alt="menu"
+        />
+      </nav>
+
+      <div class="side-menu" id="side-menu">
+        <div class="close" onclick="sideMenu(1)">
+          <img src="../images/icon/close.png" alt="" />
+        </div>
+        <div class="user">
+          <img src="../img/logo-bg-removed.png" alt="Username" />
+        </div>
+        <ul>
+          <li><a href="../index.html#about_section">About</a></li>
+          <li><a href="../index.html#team_section">Portfolio</a></li>
+          <!-- <li><a href="#team_section">Team</a></li> -->
+          <li><a href="../index.html#course_seciton">Courses</a></li>
+          <li><a href="../index.html#contactus_section">Contact</a></li>
+          <li><a href="#location">Location</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="Course_Container">
+        <div class="cInfo">
+          <h3>Learn C++: Introduction</h3>
+          <br />
+          <p>
+            C++ is a general purpose programming language and widely used now a
+            days for competitive programming. It has imperative, object-oriented
+            and generic programming features. C++, high-level computer
+            programming language. Developed by Bjarne Stroustrup of Bell
+            Laboratories in the early 1980s, it is based on the traditional C
+            language but with added object-oriented programming and other
+            capabilities. C++ is considered one of the fastest languages and is
+            very close to low-level languages, thus allowing complete control
+            over memory allocation and management. Our C++ tutorial includes all
+            topics of C++ such as first example, control statements, objects and
+            classes, inheritance, constructor, destructor, this, static,
+            polymorphism, abstraction, abstract class, interface, namespace,
+            encapsulation, arrays, strings, exception handling, File IO, etc.
+          </p>
+        </div>
+        <div class="courseImage">
+          <img src="../images/courses/" alt="C++" />
+        </div>
+      </div>
+
+      <div id="makeitfull">
+        <a href="#course_seciton"
+          ><img src="../images/icon/makeitfull.png"
+        /></a>
+      </div>
+      <div class="Chapters" id="course_seciton">
+        <!-- <div class="csec"></div> -->
+        <h3>Chapters</h3>
+
+        <div class="Chapter_parts">
+          <!-- card 01 -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Why C++ Programming?</h5>
+              <hr />
+              <ul class="card-text">
+                <li>Object-oriented Programming.</li>
+                <li>Widely used among the programmers in application.</li>
+                <li>Easy to learn.</li>
+              </ul>
+            </div>
+          </div>
+          <!-- card 01 end -->
+
+          <!-- card 02 -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Basic C++ Concept</h5>
+              <hr />
+              <ul class="card-text">
+                <li>Data types, operators and tokens</li>
+                <li>Loops and arrays</li>
+                <li>Functions and other basic concepts</li>
+              </ul>
+            </div>
+          </div>
+          <!-- card 02 end -->
+
+          <!-- card 03 -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Classes and Objects</h5>
+              <hr />
+              <ul class="card-text">
+                <li>Basics of class and objects</li>
+                <li>Function overloading</li>
+                <li>Array of objects</li>
+              </ul>
+            </div>
+          </div>
+          <!-- card 03 end  -->
+
+          <!-- card 04 -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">constructor & Destructor</h5>
+              <hr />
+              <ul class="card-text">
+                <li>Constructors and types</li>
+                <li>Constructor overloading</li>
+                <li>Destructor</li>
+              </ul>
+            </div>
+          </div>
+          <!-- card 04 end -->
+
+          <!-- card 05 -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Properties of OOP</h5>
+              <hr />
+              <ul class="card-text">
+                <li>Properties of OOP</li>
+                <li>Characteristics of OOP</li>
+                <li>Static variables and functions</li>
+              </ul>
+            </div>
+          </div>
+          <!-- card 05 end -->
+
+          <!-- card 06 -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Inheritance in C++</h5>
+              <hr />
+              <ul class="card-text">
+                <li>Inheritance basics</li>
+                <li>Types of inheritance.</li>
+                <li>Ambiguity problem in inheritance.</li>
+                <li>Function overriding.</li>
+                <li>Diamond problem in inheritance.</li>
+                <li>Constructor in inheritance.</li>
+              </ul>
+            </div>
+          </div>
+          <!-- card 06 end -->
+
+          <!-- card 07 -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Polymorphism in C++</h5>
+              <hr />
+              <ul class="card-text">
+                <li>Polymorphism basics.</li>
+                <li>Types of polymorphism.</li>
+                <li>Runtime polymorphism/ virtual function.</li>
+                <li>Operator overloading in cpp.</li>
+              </ul>
+            </div>
+          </div>
+          <!-- card 07 end  -->
+
+          <!-- card 08 -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">File Handling in C++</h5>
+              <hr />
+              <ul class="card-text">
+                <li>Types of file.</li>
+                <li>Different modes for operating a file.</li>
+                <li>Different operations in text file.</li>
+                <li>Different operations in binary file.</li>
+              </ul>
+            </div>
+          </div>
+          <!-- card 08 end -->
+
+          <!-- card 09 -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Template in C++</h5>
+              <hr />
+              <ul class="card-text">
+                <li>Template introduction.</li>
+                <li>Different modes for operating a file.</li>
+                <li>Template function.</li>
+                <li>Template classes.</li>
+              </ul>
+            </div>
+          </div>
+          <!-- card 09 end  -->
+        </div>
+      </div>
+    </main>
+
+    <marquee
+      style="
+        background: linear-gradient(to right, #fa4b37, #df2771);
+        margin-top: 50px;
+      "
+      direction="left"
+      onmouseover="this.stop()"
+      onmouseout="this.start()"
+      scrollamount="20"
+      ><div class="marqu">
+        “Education is the passport to the future, for tomorrow belongs to those
+        who prepare for it today.” “Your attitude, not your aptitude, will
+        determine your altitude.” “If you think education is expensive, try
+        ignorance.” “The only person who is educated is the one who has learned
+        how to learn …and change.”
+      </div></marquee
+    >
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="left-col">
+          <img
+            src="../img/logo-bg-removed.png"
+            style="
+              width: 150px;
+              background-color: #fff;
+              border-radius: 12px;
+              margin-bottom: 5%;
+            "
+          />
+          <div class="logo"></div>
+          <div class="social-media">
+            <a href="https://www.facebook.com/KanungoAseem"
+              ><img src="../images/icon\fb.png"
+            /></a>
+            <a
+              href="https://www.instagram.com/aksoftechno/?utm_medium=copy_link"
+              ><img src="../images/icon\insta.png"
+            /></a>
+            <a href="https://x.com/aksoftechno"
+              ><img src="../images/icon\tt.png"
+            /></a>
+            <a href="https://www.youtube.com/@aksoftechno/featured"
+              ><img src="../images/icon\ytube.png"
+            /></a>
+            <a href="https://aksoftechno.com/www.linkedin.com/in/aksoftechno"
+              ><img src="../images/icon\linkedin.png"
+            /></a>
+          </div>
+          <br /><br />
+          <p>
+            <img src="../images/icon/location.png" /> 44 Anand bag, Civil Lines
+            Rd, Dewas, Madhya Pradesh 455001
+          </p>
+          <br />
+          <p>
+            <img src="../images/icon/phone.png" /> +918770393104<br /><img
+              src="../images/icon/mail.png"
+            />&nbsp; contact@aksoftechno.com
+          </p>
+        </div>
+
+        <div class="right-col" id="location">
+          <h1 style="color: #fff">Location</h1>
+
+          <br />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58778.001039331844!2d75.9688290486328!3d22.9640314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396317c05f4d4b93%3A0x483c0b3834f5bf7d!2sAksoft!5e0!3m2!1sen!2sin!4v1745937516389!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright-Section">
+      <hr />
+      <p class="rights-text">
+        Copyright © 2025 Created By his student ,Mr. Assem Kanungo All Rights
+        Reserved.
+      </p>
+      <br />
+    </div>
+  </body>
+</html>
