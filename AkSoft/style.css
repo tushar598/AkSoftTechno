@@ -129,6 +129,7 @@ button {
   margin-top: 245px;
   display: flex;
   flex-wrap: wrap;
+  height: 500px;
   align-items: center;
   justify-content: space-around;
 }
@@ -137,7 +138,6 @@ button {
   transform: translateY(-50px);
 }
 .quote h5 {
-  letter-spacing: 2px;
   word-spacing: 2px;
   font-size: 1em;
   margin-top: 20px;
@@ -147,31 +147,25 @@ button {
 .quote p {
   align-self: flex-start;
   font-size: 2.3em;
+  line-height: 1.2em;
   color: #2e2e2e;
 }
 .quote span {
   font-size: 1.7em;
+  background: linear-gradient(to right, #f94a38, #df286f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
-.quote .play {
-  margin-top: 20px;
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
+
+.hero_image{
+  padding-bottom: 6em;
 }
-.quote .play img {
-  width: 45px;
-  cursor: pointer;
-  filter: drop-shadow(0 0 10px #0002);
-}
-.quote .play span a {
-  margin-left: 10px;
-  font-size: 20px;
-  font-weight: 900;
-  color: rgba(0, 0, 0, 0.8);
-  cursor: pointer;
-}
-.svg-image img {
+
+.img-fluid  {
   width: 500px;
+  border-radius: 50%;
   filter: drop-shadow(0 20px 10px rgba(0, 0, 0, 0.2));
 }
 
@@ -331,7 +325,12 @@ button {
   font-family: "Open Sans", sans-serif;
   font-size: 3em;
   text-align: center;
-  color: #2e3d49;
+  background: linear-gradient(to right, #f94a38, #df286f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
 }
 
 /*ABOUT*/
@@ -344,13 +343,16 @@ button {
   align-items: center;
   gap: 4em;
 }
+
+
 .about-content .side-text {
   width: 550px;
   padding: 50px 40px;
-  background: #fff;
+  background: linear-gradient(to right, #f94a38, #df286f);
   box-shadow: 2px 0 100px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   text-align: justify;
+  color: white;
   line-height: 22px;
   opacity: 0;
   transform: translateX(-100px);
@@ -448,137 +450,6 @@ div.card.modified-card:hover {
   gap: 2em;
 }
 
-/*TEAM SECTION*/
-.totalcard {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-.totalcard .card {
-  margin: 50px;
-  width: 300px;
-  border-radius: 10px;
-  background: #fff;
-}
-.totalcard .card {
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.3);
-}
-.card:nth-child(1) {
-  border-top: 5px solid green;
-}
-.card:nth-child(2) {
-  border-top: 5px solid blue;
-}
-.card:nth-child(1):hover {
-  box-shadow: inset 0px 0px 10px rgba(0, 255, 0, 0.5),
-    1px 1px 30px rgba(0, 255, 0, 0.5);
-}
-.card:nth-child(2):hover {
-  box-shadow: inset 0px 0px 10px rgba(0, 0, 255, 0.5),
-    1px 1px 30px rgba(0, 0, 255, 0.5);
-}
-.totalcard .card img {
-  width: 100px;
-  height: 100px;
-  margin-top: 5px;
-  cursor: pointer;
-  border-radius: 50px;
-  transition-duration: 0.8s;
-}
-.totalcard .card img:hover {
-  transform: scale(3.5);
-  border-radius: 0;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-#detail p {
-  font-size: 15px;
-  line-height: 25px;
-  font-variant: small-caps;
-  text-align: center;
-  margin: 25px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-#detail button {
-  outline: none;
-  border-radius: 10px;
-  border-style: none;
-  border: 1px solid black;
-  padding: 9px 25px;
-  cursor: pointer;
-  transition-duration: 0.4s;
-}
-#detail a {
-  bottom: 80px;
-  text-decoration: none;
-  margin-bottom: 30px;
-  margin-top: 20px;
-  margin-left: 90px;
-  align-self: center;
-}
-.btn-roshan:hover {
-  background: rgba(0, 255, 0, 0.7);
-  color: #fff;
-}
-.btn-roshan2:hover {
-  background: rgba(0, 0, 255, 0.5);
-  color: #fff;
-}
-.card-title {
-  font-size: 17px;
-  color: #343a40;
-  padding: 20px;
-  font-weight: 700;
-}
-
-/* Service Section
-
-.service-swipe {
-	margin-top: 20px;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7)),url("images/extra/b3.jpg");
-		background-size: cover;
-		background-attachment: fixed;
-	}
-	.service-swipe .s-card img {
-		width: 100px;
-	}
-	.service-swipe a {
-		padding: 0;
-		margin: 40px 10px;
-		text-decoration: none;
-	}
-	.service-swipe .s-card {
-		display: flex;
-		justify-content: space-around;
-		padding: 10px;
-		align-items: center;
-		text-align:start;
-		max-width: 350px;
-		height: 200px;
-		box-shadow: inset 0 0 20px rgba(255,255,255,0.05),
-						0 0 50px rgba(0,0,0,0.8);
-		border-radius: 5px;
-		cursor: pointer;
-		transition-duration: .5s;
-	}
-	.service-swipe .s-card p {
-		padding: 1.3em;
-		color: #f2f2f2;
-		font-size: 1em;
-		font-family: 'Open Sans',sans-serif;
-	}
-	.service-swipe .s-card:hover {
-		box-shadow: 0 0 50px rgba(255,255,255,0.8);
-		transform: translateY(-10px);
-	} */
-
 /*Contact Us Section*/
 .csec {
   background: linear-gradient(to right, #fa4b37, #df2771);
@@ -600,7 +471,7 @@ div.card.modified-card:hover {
   justify-content: space-around;
 }
 .cc {
-  width: 400px;
+  width: 50%;
   height: 620px;
   border-radius: 10px;
   justify-content: center;
@@ -622,7 +493,7 @@ div.card.modified-card:hover {
 .cc form label {
   position: absolute;
   color: #2e3d49;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 800;
 }
 .cc form input {
@@ -671,7 +542,7 @@ form textarea {
 #makeitfull img {
   width: 50px;
 }
-.review {
+/* .review {
   background: #f8f8f8;
   width: 100%;
 }
@@ -682,7 +553,7 @@ form textarea {
   justify-content: space-around;
 }
 .rev-container .rev-card {
-  /*overflow: hidden;*/
+  /*overflow: hidden;
   width: 467px;
   height: 226px;
   margin-bottom: 40px;
@@ -740,7 +611,7 @@ form textarea {
   color: #2e3d49;
   line-height: 22px;
   text-align: start;
-}
+} */
 
 /*FEEDBACK
 .title2 {
@@ -826,6 +697,142 @@ form textarea {
   font-size: 12px;
   cursor: pointer;
 }*/
+
+.carousel-container {
+  width: 80%;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  background: transparent;
+  filter: drop-shadow(2px 3px 12px white);
+}
+
+.carousel-track {
+  display: flex;
+  padding: 1em;
+  height: 500px;
+  transition: transform 0.5s ease-in-out;
+}
+
+div.card_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  background: linear-gradient(to right, #f94a38, #df286f);
+  border: 0.03px solid rgb(217, 216, 216);
+  border-radius: 25px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 15px;
+  flex-shrink: 0;
+  text-align: center;
+  
+  
+}
+
+div.card_top {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin: 0 1em;
+  border-radius: 25px 25px 0 25px;
+}
+
+
+.card_info .review_Card_img {
+  width: 120px;
+  height: 120px;
+  margin-top: 40px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background: #4884f7;
+}
+
+div.card_detail {
+  display: flex
+  ;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      width: 256%;
+      padding: 0 1em;
+      border-radius: 12px;
+      margin: 2em;
+      height: 400px;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+}
+
+.card_info h3 {
+  margin: 15px 0 10px;
+  color: #222;
+}
+
+.card_info .review_domain{
+  font-weight: 200;
+  font-size: 1em;
+}
+
+.card_info p {
+  margin-top: 1em;
+  color: #000000;
+  font-weight: 200;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.card button {
+  background: linear-gradient(to right, #f94a38, #df286f);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.carousel-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+.carousel-pagination .dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.carousel-pagination .dot.active {
+  background-color: #007bff;
+}
+
+.card_detail.expanded {
+  max-height: 1000px;
+}
+
+.nav button {
+  position: absolute;
+  top: 45%;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #6c63ff;
+}
+
+.nav .prev {
+  left: 10px;
+}
+
+.nav .next {
+  right: 10px;
+}
 
 /*SCROLLING TEXT*/
 .marqu {
@@ -964,9 +971,35 @@ footer .btn:hover {
   .quote p {
     font-size: 30px;
   }
+ /* review section  */
+
+ div.card_info {
+  flex-direction: column;
+ }
+
+ .card_info p {
+  margin-top: 1em;
+  color: #000000;
+  font-weight: 200;
+  font-size: 10px;
+  margin-bottom: 15px;
+}
+
+ div.card_detail {
+  display: inline;
+  width: auto;
+  margin: 12px;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  height: 400px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
   .service-container .right-side img {
     width: 90%;
   }
+ }
+
   .title {
     margin-top: 120px;
   }
@@ -974,6 +1007,11 @@ footer .btn:hover {
   .course {
     justify-content: center;
   }
+
+  .rights-text{
+    text-align: center;
+  }
+ 
 }
 @media screen and (max-width: 700px) {
   footer .btn {

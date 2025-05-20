@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="shortcut icon"
+      type="png"
+      href="../img/aksoft_logo-removebg-preview.png"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Comaptible" content="IE=edge" />
+    <title>Home | AKSoftechno</title>
+    <meta name="desciption" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="placement.css" />
+    <link rel="stylesheet" href="../Placement/swiper-bundle.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <script type="text/javascript" src="./Placement.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header id="header">
+      <nav>
+        <div class="logo">
+          <img src="../img/logo-bg-removed.png" alt="logo" />
+        </div>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#Course_section">Courses</a></li>
+          <li><a href="#">Placement</a></li>
+          <li><a href="../index.html#about_section">About Us</a></li>
+          <li><a href="../index.html#contactus_section">Contact US</a></li>
+        </ul>
+
+        <a class="get-started" href="../login.html">Get Started</a>
+        <img
+          src="../images/icon/menu.png"
+          class="menu"
+          onclick="sideMenu(0)"
+          alt="menu"
+        />
+      </nav>
+
+      <div class="side-menu" id="side-menu">
+        <div class="close" onclick="sideMenu(1)">
+          <img src="../images/icon/close.png" alt="" />
+        </div>
+        <div class="user">
+          <img src="../img/logo-bg-removed.png" alt="Username" />
+        </div>
+        <ul>
+          <li><a href="../index.html#about_section">About</a></li>
+          <li><a href="../index.html#team_section">Portfolio</a></li>
+          <!-- <li><a href="#team_section">Team</a></li> -->
+          <li><a href="../index.html#course_seciton">Courses</a></li>
+          <li><a href="../index.html#contactus_section">Contact</a></li>
+          <li><a href="#location">Location</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="container head-container">
+        <div class="row gx-5">
+          <div
+            class="col-12 col-md-5 d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              src="../PlaceCompany/placement.jpg"
+              alt="svg"
+              class="img-fluid"
+            />
+          </div>
+          <div
+            class="col-12 col-md-7 d-flex flex-column justify-content-center align-items-center quote"
+          >
+            <p>Our Placement</p>
+            <h5>
+              AKSOFTECHNO wants to give you a surrounding where you will not
+              only learn the computer programming languages but also lead you to
+              encounter with some more facts about real life scenario. We give
+              you liberty where you can ask anything without any hesitation
+              which will help you to conclude your problem. We will make sure
+              that you can learn the best out of everything.
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Sliding Information -->
+      <div class="Placed"><h3>Our Student are Placed At:</h3></div>
+      <div
+        class="slider"
+        style="--width: 100px; --height: 50px; --quantity: 10"
+      >
+        <div class="list">
+          <div class="item" style="--position: 1">
+            <img src="../PlaceCompany/INFY_BIG .png" alt="" />
+          </div>
+          <div class="item" style="--position: 2">
+            <img src="../PlaceCompany/ACN_BIG .png" alt="" />
+          </div>
+          <div class="item" style="--position: 3">
+            <img src="../PlaceCompany/BIT_WISE_BIG.bak.png" alt="" />
+          </div>
+          <div class="item" style="--position: 4">
+            <img src="../PlaceCompany/CTSH_BIG .png" alt="" />
+          </div>
+          <div class="item" style="--position: 5">
+            <img src="../PlaceCompany/TCS.NS_BIG.bak.png" alt="" />
+          </div>
+          <div class="item" style="--position: 6">
+            <img src="../PlaceCompany/ACN_BIG .png" alt="" />
+          </div>
+          <div class="item" style="--position: 7">
+            <img src="../PlaceCompany/CTSH_BIG .png" alt="" />
+          </div>
+          <div class="item" style="--position: 8">
+            <img src="../PlaceCompany/INFY_BIG .png" alt="" />
+          </div>
+          <div class="item" style="--position: 9">
+            <img src="../PlaceCompany/TCS.NS_BIG.bak.png" alt="" />
+          </div>
+          <div class="item" style="--position: 10">
+            <img src="../PlaceCompany/ACN_BIG .png" alt="" />
+          </div>
+        </div>
+      </div>
+      <br />
+      <!-- <div
+
+        class="slider"
+        reverse="true"
+        style="--width: 200px; --height: 120px; --quantity: 9"
+      >
+        <div class="list">
+          <div class="item" style="--position: 1">
+            <img src="../PlaceCompany/INFY_BIG .png" alt="" />
+          </div>
+          <div class="item" style="--position: 2">
+            <img src="../PlaceCompany/ACN_BIG .png" alt="" />
+          </div>
+          <div class="item" style="--position: 3">
+            <img src="../PlaceCompany/BIT_WISE_BIG.bak.png" alt="" />
+          </div>
+          <div class="item" style="--position: 4">
+            <img src="../PlaceCompany/CTSH_BIG .png" alt="" />
+          </div>
+          <div class="item" style="--position: 5">
+            <img src="../PlaceCompany/TCS.NS_BIG.bak.png" alt="" />
+          </div>
+          <div class="item" style="--position: 6">
+            <img src="../PlaceCompany/ACN_BIG .png" alt="" />
+          </div>
+          <div class="item" style="--position: 7">
+            <img src="../PlaceCompany/CTSH_BIG .png" alt="" />
+          </div>
+          <div class="item" style="--position: 8">
+            <img src="../PlaceCompany/INFY_BIG .png" alt="" />
+          </div>
+          <div class="item" style="--position: 9">
+            <img src="../PlaceCompany/TCS.NS_BIG.bak.png" alt="" />
+          </div>
+        </div>
+      </div> -->
+      <hr />
+      <div class="PlaceStudent">
+        <h3>Our Gallery</h3>
+        <p>
+          "I just wanted to show you glimpse of my proud and happy moments."
+        </p>
+      </div>
+
+      <!-- <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide custom-carousel"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="student_data_container">
+              <div class="image_seciton" >
+                <img src="../img/placements/shivani-nigam-r-img.jpg" style="height: 200px;" alt="">
+              </div>
+              <div class="student_info" >
+                <p>I would like to thank Assem sir for their guidance and support which helped me in reaching to this platform. I joined AKSOFT when I was in second semester and learned C, C++, Java, Data Structure under his guidance. Thank you for being so creative and passionate about your teaching, and how you communicate ideas and unique life lessons with us. You made coding so interesting and simple for us. Thank you sir for your guidance.</p>
+              </div>
+             </div>
+          </div>
+          <div class="carousel-item">
+            <div class="student_data_container">
+              <div class="image_seciton">
+                <img src="../img/placements/arun-pandya-r-img.jpg" style="height: 200px;" alt="">
+              </div>
+              <div class="student_info">
+                <p>I would like to thank Assem sir for their guidance and support which helped me in reaching to this platform. I joined AKSOFT when I was in second semester and learned C, C++, Java, Data Structure under his guidance. Thank you for being so creative and passionate about your teaching, and how you communicate ideas and unique life lessons with us. You made coding so interesting and simple for us. Thank you sir for your guidance.</p>
+              </div>
+             </div>
+          </div>
+          <div class="carousel-item">
+            <div class="student_data_container">
+              <div class="image_seciton">
+                <img src="../img/placements/tanishka-vaidya-r-img.jpg" style="height: 200px;" alt="">
+              </div>
+              <div class="student_info">
+                <p>I would like to thank Assem sir for their guidance and support which helped me in reaching to this platform. I joined AKSOFT when I was in second semester and learned C, C++, Java, Data Structure under his guidance. Thank you for being so creative and passionate about your teaching, and how you communicate ideas and unique life lessons with us. You made coding so interesting and simple for us. Thank you sir for your guidance.</p>
+              </div>
+             </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      -->
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <!-- Cards -->
+          <div class="card card_info" ">
+            
+            <div class="card_detail">
+               <img
+                src="../img/placements/tanishka-vaidya-r-img.jpg"
+                alt="Tanishka Vaidya"
+                class="review_Card_img"
+              />
+              <h3> Tanishka Vaidya</h3>
+              <h5 class="review_domain"><i>UI/UX Designer</i></h5>
+              <p>
+                I cannot thank Aseem sir enough for the knowledge and guidance he gave me that helped me get placed in 4 MNCs including the top MNCs like TCS and Wipro. I joined AKSOFT when I was in second semester to learn programming. I have learned C, C++, Java, Data Structure and DBMS from sir. He made coding simple and interesting for students. He taught us practically by coding in front of us and even showing us the ways to remove errors. Thank you very much sir.
+              </p>
+            </div>
+           
+          </div>
+
+          <div class="card card_info">
+            
+            <div class="card_detail">
+                 
+              <img src="../img/placements/mayur-choudhary-r-img.jpg" alt=" Mayur Choudhary" 
+              class="review_Card_img"/>
+              <h3>  Mayur Choudhary</h3>
+              <h5 class="review_domain"><i>Graphic Designer</i></h5>
+              <p>
+                I would like to thank Assem sir for their guidance and support which helped me in reaching to this platform. I joined AKSOFT when I was in second semester and learned C, C++, Java, Data Structure under his guidance. Thank you for being so creative and passionate about your teaching, and how you communicate ideas and unique life lessons with us. You made coding so interesting and simple for us. Thank you sir for your guidance.
+              </p>
+            </div>
+          
+          </div>
+
+          <div class="card card_info">
+           
+            <div class="card_detail">
+              <img src="../img/placements/shivani-nigam-r-img.jpg" alt="Shivani Nigam" 
+              class="review_Card_img"/>
+              <h3>Shivani Nigam</h3>
+              <h5 class="review_domain"><i>Graphic Designer</i></h5>
+              <p>
+                I'm very thankful to Aseem sir for his constant support.It was excellent learning experience and it allowed me to confirm my interest in pursuing my career as a software engineer.
+              </p>
+            </div>
+           
+          </div>
+
+          <div class="card card_info">
+            <div class="card_detail">
+              <img src="../img/placements/nikhil-prajapari-r-img.jpg" alt="Nikhil Prajapati" 
+              class="review_Card_img"/>
+              <h3>Nikhil Prajapati</h3>
+              <h5 class="review_domain"><i>Graphic Designer</i></h5>
+              <p>
+                I'm very thankful to Aseem sir for his constant support.It was excellent learning experience and it allowed me to confirm my interest in pursuing my career as a software engineer.
+              </p>
+            </div>
+           
+          </div>
+
+          <div class="card card_info">
+            <div class="card_detail">
+              <img src="../img/placements/arun-pandya-r-img.jpg" alt="Arun Pandey" 
+              class="review_Card_img"/>
+              <h3>Arun Pandey</h3>
+              <h5 class="review_domain"><i>Graphic Designer</i></h5>
+              <p>
+                I'm very thankful to Aseem sir for his constant support.It was excellent learning experience and it allowed me to confirm my interest in pursuing my career as a software engineer.
+              </p>
+            </div>
+           
+          </div>
+         <!--  <div class="card">
+            <div class="card_top">
+              <span class="overlay"></span>
+              <img src="https://i.pravatar.cc/100?img=56" alt="Jones Gail" />
+            </div>
+            <div class="card_detail">
+              <h3>David Dell</h3>
+              <p>
+                The lorem text the section that contains header with having open
+                functionality. Lorem dolor sit amet consectetur adipisicing
+                elit.
+              </p>
+            </div>
+            <button>Show More</button>
+          </div>-->
+        </div> 
+        <div class="nav">
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+        <div class="carousel-pagination"></div>
+      </div>
+    </div>
+    </main>
+
+    <marquee
+      style="
+        background: linear-gradient(to right, #fa4b37, #df2771);
+        margin-top: 50px;
+      "
+      direction="left"
+      onmouseover="this.stop()"
+      onmouseout="this.start()"
+      scrollamount="20"
+      ><div class="marqu">
+        “Education is the passport to the future, for tomorrow belongs to those
+        who prepare for it today.” “Your attitude, not your aptitude, will
+        determine your altitude.” “If you think education is expensive, try
+        ignorance.” “The only person who is educated is the one who has learned
+        how to learn …and change.”
+      </div></marquee
+    >
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="left-col">
+          <img
+            src="../img/logo-bg-removed.png"
+            style="
+              width: 150px;
+              background-color: #fff;
+              border-radius: 12px;
+              margin-bottom: 5%;
+            "
+          />
+          <div class="logo"></div>
+          <div class="social-media">
+            <a href="https://www.facebook.com/KanungoAseem"
+              ><img src="../images/icon\fb.png"
+            /></a>
+            <a
+              href="https://www.instagram.com/aksoftechno/?utm_medium=copy_link"
+              ><img src="../images/icon\insta.png"
+            /></a>
+            <a href="https://x.com/aksoftechno"
+              ><img src="../images/icon\tt.png"
+            /></a>
+            <a href="https://www.youtube.com/@aksoftechno/featured"
+              ><img src="../images/icon\ytube.png"
+            /></a>
+            <a href="https://aksoftechno.com/www.linkedin.com/in/aksoftechno"
+              ><img src="../images/icon\linkedin.png"
+            /></a>
+          </div>
+          <br /><br />
+          <p>
+            <img src="../images/icon/location.png" /> 44 Anand bag, Civil Lines
+            Rd, Dewas, Madhya Pradesh 455001
+          </p>
+          <br />
+          <p>
+            <img src="../images/icon/phone.png" /> +918770393104<br /><img
+              src="../images/icon/mail.png"
+            />&nbsp; contact@aksoftechno.com
+          </p>
+        </div>
+
+        <div class="right-col" id="location">
+          <h1 style="color: #fff">Location</h1>
+
+          <br />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58778.001039331844!2d75.9688290486328!3d22.9640314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396317c05f4d4b93%3A0x483c0b3834f5bf7d!2sAksoft!5e0!3m2!1sen!2sin!4v1745937516389!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright-Section">
+      <hr />
+      <p class="rights-text">
+        Copyright © 2025 Created By his student ,Mr. Assem Kanungo All Rights
+        Reserved.
+      </p>
+      <br />
+    </div>
+
+    <!-- Scrolling card logic  -->
+
+    <script> 
+      const track = document.querySelector(".carousel-track");
+      const cards = document.querySelectorAll(".card_info");
+      const nextBtn = document.querySelector(".next");
+      const prevBtn = document.querySelector(".prev");
+      const pagination = document.querySelector(".carousel-pagination");
+  
+      let currentIndex = 0;
+      let interval = setInterval(slideNext, 3000);
+  
+      // Add these missing variables
+      const totalPages = cards.length;
+      let currentPage = 0;
+  
+      function slideNext() {
+        currentIndex = (currentIndex + 1) % cards.length;
+        currentPage = currentIndex;
+        updateCarousel();
+      }
+  
+      function slidePrev() {
+        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+        currentPage = currentIndex;
+        updateCarousel();
+      }
+  
+      function updateCarousel() {
+        const offset = currentIndex * (cards[0].offsetWidth + 30);
+        track.style.transform = `translateX(-${offset}px)`;
+        highlightActiveDot();
+      }
+  
+      function createPaginationDots() {
+        pagination.innerHTML = "";
+        for (let i = 0; i < totalPages; i++) {
+          const dot = document.createElement("span");
+          dot.classList.add("dot");
+          if (i === currentPage) dot.classList.add("active");
+          dot.addEventListener("click", () => {
+            currentPage = i;
+            currentIndex = i;
+            updateCarousel();
+            clearInterval(interval);
+            setTimeout(() => {
+              interval = setInterval(slideNext, 3000);
+            }, 20000);
+          });
+          pagination.appendChild(dot);
+        }
+      }
+  
+      function highlightActiveDot() {
+        document.querySelectorAll(".dot").forEach((dot, i) => {
+          dot.classList.toggle("active", i === currentPage);
+        });
+      }
+  
+      nextBtn.addEventListener("click", () => {
+        clearInterval(interval);
+        slideNext();
+        interval = setInterval(slideNext, 3000);
+      });
+  
+      prevBtn.addEventListener("click", () => {
+        clearInterval(interval);
+        slidePrev();
+        interval = setInterval(slideNext, 3000);
+      });
+  
+    
+  
+      createPaginationDots();
+     
+    </script>  
+  </body>
+</html>
