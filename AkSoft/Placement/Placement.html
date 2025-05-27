@@ -12,13 +12,16 @@
     <meta name="desciption" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="placement.css" />
-    <link rel="stylesheet" href="../Placement/swiper-bundle.min.css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&display=swap" rel="stylesheet">
     <script type="text/javascript" src="./Placement.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script
@@ -26,6 +29,8 @@
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
     ></script>
+
+    
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -70,34 +75,21 @@
     </header>
 
     <main>
-      <div class="container head-container">
-        <div class="row gx-5">
-          <div
-            class="col-12 col-md-5 d-flex flex-column justify-content-center align-items-center"
-          >
-            <img
-              src="../PlaceCompany/placement.jpg"
-              alt="svg"
-              class="img-fluid"
-            />
-          </div>
-          <div
-            class="col-12 col-md-7 d-flex flex-column justify-content-center align-items-center quote"
-          >
-            <p>Our Placement</p>
-            <h5>
-              AKSOFTECHNO wants to give you a surrounding where you will not
-              only learn the computer programming languages but also lead you to
-              encounter with some more facts about real life scenario. We give
-              you liberty where you can ask anything without any hesitation
-              which will help you to conclude your problem. We will make sure
-              that you can learn the best out of everything.
-            </h5>
-          </div>
-        </div>
+      <div class="container head-container" style="max-width: 100vw !important;">
       </div>
-
-      <hr>
+      
+      <div class="quote">
+        <p style="font-size: 4em; font-weight: 800; font-family: Ancizar Sans;">Our Placement</p>
+        <h5>
+          AKSOFTECHNO wants to give you a surrounding where you will not
+          only learn the computer programming languages but also lead you to
+          encounter with some more facts about real life scenario. We give
+          you liberty where you can ask anything without any hesitation
+          which will help you to conclude your problem. We will make sure
+          that you can learn the best out of everything.
+        </h5>
+      </div> 
+      
 
       <!-- Sliding Information -->
       <div class="Placed"><h3>Our Student are Placed At:</h3></div>
@@ -176,165 +168,131 @@
         </div>
       </div> -->
       <hr />
+
+      <!-- Placement section -->
       <div class="PlaceStudent">
         <h3>Our Gallery</h3>
-        <p>
+        <p class="testimonial-p">
           "I just wanted to show you glimpse of my proud and happy moments."
         </p>
       </div>
 
-      <!-- <div
-        id="carouselExampleAutoplaying"
-        class="carousel slide custom-carousel"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="student_data_container">
-              <div class="image_seciton" >
-                <img src="../img/placements/shivani-nigam-r-img.jpg" style="height: 200px;" alt="">
-              </div>
-              <div class="student_info" >
-                <p>I would like to thank Assem sir for their guidance and support which helped me in reaching to this platform. I joined AKSOFT when I was in second semester and learned C, C++, Java, Data Structure under his guidance. Thank you for being so creative and passionate about your teaching, and how you communicate ideas and unique life lessons with us. You made coding so interesting and simple for us. Thank you sir for your guidance.</p>
-              </div>
-             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="student_data_container">
-              <div class="image_seciton">
-                <img src="../img/placements/arun-pandya-r-img.jpg" style="height: 200px;" alt="">
-              </div>
-              <div class="student_info">
-                <p>I would like to thank Assem sir for their guidance and support which helped me in reaching to this platform. I joined AKSOFT when I was in second semester and learned C, C++, Java, Data Structure under his guidance. Thank you for being so creative and passionate about your teaching, and how you communicate ideas and unique life lessons with us. You made coding so interesting and simple for us. Thank you sir for your guidance.</p>
-              </div>
-             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="student_data_container">
-              <div class="image_seciton">
-                <img src="../img/placements/tanishka-vaidya-r-img.jpg" style="height: 200px;" alt="">
-              </div>
-              <div class="student_info">
-                <p>I would like to thank Assem sir for their guidance and support which helped me in reaching to this platform. I joined AKSOFT when I was in second semester and learned C, C++, Java, Data Structure under his guidance. Thank you for being so creative and passionate about your teaching, and how you communicate ideas and unique life lessons with us. You made coding so interesting and simple for us. Thank you sir for your guidance.</p>
-              </div>
-             </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      -->
-      <div class="carousel-container">
-        <div class="carousel-track">
-          <!-- Cards -->
-          <div class="card card_info" ">
-            
-            <div class="card_detail">
-               <img
-                src="../img/placements/tanishka-vaidya-r-img.jpg"
-                alt="Tanishka Vaidya"
-                class="review_Card_img"
+     <!-- <div class="testimonial" data-bs-ride="carousel">
+        <div class="testimonial-items">
+          <div class="student_data_container" style=" height: 250px; width: 37%;">
+            <div class="image_seciton">
+              <img
+                src="../img/placements/shivani-nigam-r-img.jpg"
+                style="height: 170px"
+                alt=""
               />
-              <h3> Tanishka Vaidya</h3>
-              <h5 class="review_domain"><i>UI/UX Designer</i></h5>
-              <p>
-                I cannot thank Aseem sir enough for the knowledge and guidance he gave me that helped me get placed in 4 MNCs including the top MNCs like TCS and Wipro. I joined AKSOFT when I was in second semester to learn programming. I have learned C, C++, Java, Data Structure and DBMS from sir. He made coding simple and interesting for students. He taught us practically by coding in front of us and even showing us the ways to remove errors. Thank you very much sir.
+            </div>
+            <div class="student_info">
+              <p style="font-size: 13px;">
+                I would like to thank Assem sir for their guidance and support
+                which helped me in reaching to this platform. I joined AKSOFT
+                when I was in second semester and learned C, C++, Java, Data
+                Structure under his guidance. Thank you for being so creative
+                and passionate about your teaching, and how you communicate
+                ideas and unique life lessons with us. You made coding so
+                interesting and simple for us. Thank you sir for your guidance.
               </p>
             </div>
-           
           </div>
-
-          <div class="card card_info">
-            
-            <div class="card_detail">
-                 
-              <img src="../img/placements/mayur-choudhary-r-img.jpg" alt=" Mayur Choudhary" 
-              class="review_Card_img"/>
-              <h3>  Mayur Choudhary</h3>
-              <h5 class="review_domain"><i>Graphic Designer</i></h5>
-              <p>
-                I would like to thank Assem sir for their guidance and support which helped me in reaching to this platform. I joined AKSOFT when I was in second semester and learned C, C++, Java, Data Structure under his guidance. Thank you for being so creative and passionate about your teaching, and how you communicate ideas and unique life lessons with us. You made coding so interesting and simple for us. Thank you sir for your guidance.
-              </p>
-            </div>
-          
-          </div>
-
-          <div class="card card_info">
-           
-            <div class="card_detail">
-              <img src="../img/placements/shivani-nigam-r-img.jpg" alt="Shivani Nigam" 
-              class="review_Card_img"/>
-              <h3>Shivani Nigam</h3>
-              <h5 class="review_domain"><i>Graphic Designer</i></h5>
-              <p>
-                I'm very thankful to Aseem sir for his constant support.It was excellent learning experience and it allowed me to confirm my interest in pursuing my career as a software engineer.
-              </p>
-            </div>
-           
-          </div>
-
-          <div class="card card_info">
-            <div class="card_detail">
-              <img src="../img/placements/nikhil-prajapari-r-img.jpg" alt="Nikhil Prajapati" 
-              class="review_Card_img"/>
-              <h3>Nikhil Prajapati</h3>
-              <h5 class="review_domain"><i>Graphic Designer</i></h5>
-              <p>
-                I'm very thankful to Aseem sir for his constant support.It was excellent learning experience and it allowed me to confirm my interest in pursuing my career as a software engineer.
-              </p>
-            </div>
-           
-          </div>
-
-          <div class="card card_info">
-            <div class="card_detail">
-              <img src="../img/placements/arun-pandya-r-img.jpg" alt="Arun Pandey" 
-              class="review_Card_img"/>
-              <h3>Arun Pandey</h3>
-              <h5 class="review_domain"><i>Graphic Designer</i></h5>
-              <p>
-                I'm very thankful to Aseem sir for his constant support.It was excellent learning experience and it allowed me to confirm my interest in pursuing my career as a software engineer.
-              </p>
-            </div>
-           
-          </div>
-         <!--  <div class="card">
-            <div class="card_top">
-              <span class="overlay"></span>
-              <img src="https://i.pravatar.cc/100?img=56" alt="Jones Gail" />
-            </div>
-            <div class="card_detail">
-              <h3>David Dell</h3>
-              <p>
-                The lorem text the section that contains header with having open
-                functionality. Lorem dolor sit amet consectetur adipisicing
-                elit.
-              </p>
-            </div>
-            <button>Show More</button>
-          </div>-->
-        </div> 
-        <div class="nav">
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
         </div>
-        <div class="carousel-pagination"></div>
-      </div>
+
+        <div class="testimonial-items">
+          <div class="student_data_container">
+            <div class="image_seciton">
+              <img
+                src="../img/placements/shivani-nigam-r-img.jpg"
+                style="height: 200px"
+                alt=""
+              />
+            </div>
+            <div class="student_info">
+              <p>
+                I would like to thank Assem sir for their guidance and support
+                which helped me in reaching to this platform. I joined AKSOFT
+                when I was in second semester and learned C, C++, Java, Data
+                Structure under his guidance. Thank you for being so creative
+                and passionate about your teaching, and how you communicate
+                ideas and unique life lessons with us. You made coding so
+                interesting and simple for us. Thank you sir for your guidance.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-items">
+          <div class="student_data_container">
+            <div class="image_seciton">
+              <img
+                src="../img/placements/shivani-nigam-r-img.jpg"
+                style="height: 200px"
+                alt=""
+              />
+            </div>
+            <div class="student_info">
+              <p>
+                I would like to thank Assem sir for their guidance and support
+                which helped me in reaching to this platform. I joined AKSOFT
+                when I was in second semester and learned C, C++, Java, Data
+                Structure under his guidance. Thank you for being so creative
+                and passionate about your teaching, and how you communicate
+                ideas and unique life lessons with us. You made coding so
+                interesting and simple for us. Thank you sir for your guidance.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-items">
+          <div class="student_data_container">
+            <div class="image_seciton">
+              <img
+                src="../img/placements/shivani-nigam-r-img.jpg"
+                style="height: 200px"
+                alt=""
+              />
+            </div>
+            <div class="student_info">
+              <p>
+                I would like to thank Assem sir for their guidance and support
+                which helped me in reaching to this platform. I joined AKSOFT
+                when I was in second semester and learned C, C++, Java, Data
+                Structure under his guidance. Thank you for being so creative
+                and passionate about your teaching, and how you communicate
+                ideas and unique life lessons with us. You made coding so
+                interesting and simple for us. Thank you sir for your guidance.
+              </p>
+            </div>
+          </div>
+        </div> -->
+      <!-- </div> --> 
+
+      <div class="slider">
+        <div class="slides" id="slides">
+            <div class="cards">
+                <img src="../img/placements/arun-pandya-r-img.jpg" alt="Designer" >
+                <h2>Designer</h2>
+                <p class="cards-p">Artistry fuels innovation in the digital landscapes.</p>
+            </div>
+            <div class="cards">
+                <img src="https://via.placeholder.com/300" alt="Developer">
+                <h2>Developer</h2>
+                <p class="cards-p">Coding innovation drive to the future of technology.</p>
+            </div>
+            <div class="cards">
+                <img src="https://via.placeholder.com/300" alt="Marketer">
+                <h2>Marketer</h2>
+                <p class="cards-p">Strategic marketing transforms brand narratives.</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn" onclick="moveSlide(-1)">❮</button>
+            <button class="btn" onclick="moveSlide(1)">❯</button>
+        </div>
     </div>
     </main>
 
@@ -423,82 +381,35 @@
       </p>
       <br />
     </div>
-
-    <!-- Scrolling card logic  -->
-
-    <script> 
-      const track = document.querySelector(".carousel-track");
-      const cards = document.querySelectorAll(".card_info");
-      const nextBtn = document.querySelector(".next");
-      const prevBtn = document.querySelector(".prev");
-      const pagination = document.querySelector(".carousel-pagination");
-  
-      let currentIndex = 0;
-      let interval = setInterval(slideNext, 3000);
-  
-      // Add these missing variables
-      const totalPages = cards.length;
-      let currentPage = 0;
-  
-      function slideNext() {
-        currentIndex = (currentIndex + 1) % cards.length;
-        currentPage = currentIndex;
-        updateCarousel();
-      }
-  
-      function slidePrev() {
-        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-        currentPage = currentIndex;
-        updateCarousel();
-      }
-  
-      function updateCarousel() {
-        const offset = currentIndex * (cards[0].offsetWidth + 30);
-        track.style.transform = `translateX(-${offset}px)`;
-        highlightActiveDot();
-      }
-  
-      function createPaginationDots() {
-        pagination.innerHTML = "";
-        for (let i = 0; i < totalPages; i++) {
-          const dot = document.createElement("span");
-          dot.classList.add("dot");
-          if (i === currentPage) dot.classList.add("active");
-          dot.addEventListener("click", () => {
-            currentPage = i;
-            currentIndex = i;
-            updateCarousel();
-            clearInterval(interval);
-            setTimeout(() => {
-              interval = setInterval(slideNext, 3000);
-            }, 20000);
-          });
-          pagination.appendChild(dot);
-        }
-      }
-  
-      function highlightActiveDot() {
-        document.querySelectorAll(".dot").forEach((dot, i) => {
-          dot.classList.toggle("active", i === currentPage);
-        });
-      }
-  
-      nextBtn.addEventListener("click", () => {
-        clearInterval(interval);
-        slideNext();
-        interval = setInterval(slideNext, 3000);
-      });
-  
-      prevBtn.addEventListener("click", () => {
-        clearInterval(interval);
-        slidePrev();
-        interval = setInterval(slideNext, 3000);
-      });
-  
-    
-  
-      createPaginationDots();
-     
-    </script>  
   </body>
+  <script>
+   let currentIndex = 0;
+const cards = document.querySelectorAll('.cards'); 
+const totalCards = cards.length;
+const cardsToShow = 3; // Change this to your desired number of visible cards
+
+document.querySelector('.next').addEventListener('click', () => {
+    if(currentIndex < totalCards - cardsToShow) {
+        currentIndex += cardsToShow;
+    } else {
+        currentIndex = 0; // Loop back to the start
+    }
+    updateSlider();
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+    if(currentIndex >= cardsToShow) {
+        currentIndex -= cardsToShow;
+    } else {
+        currentIndex = totalCards - cardsToShow; // Go to the end
+    }
+    updateSlider();
+});
+
+function updateSlider() {
+    const sliderContainer = document.querySelector('.slider-container');
+    sliderContainer.style.transform = `translateX(-${(currentIndex / totalCards) * 100}%)`;
+}
+
+</script>
 </html>

@@ -41,11 +41,12 @@ nav {
   display: flex;
   width: 100%;
   z-index: 1000;
-  background: #fff;
+  background: #fff; /* Start with transparent */
   justify-content: space-around;
-  transition: 1.5s;
+  transition: 0.5s ease-in-out;
   align-items: center;
 }
+
 nav ul {
   display: flex;
   align-items: center;
@@ -208,30 +209,44 @@ button {
 }
 
 .head-container {
-  margin: 8em 0;
-  margin-top: 10em;
+  padding-top: 205px;
   display: flex;
-  flex-wrap: wrap-reverse;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: top;
+  background: linear-gradient(rgba(0, 0, 0, 0.468), rgba(149, 149, 149, 0.299)),
+    url("../img/placement_hero5.png");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
 }
+
 .quote {
-  width: 600px;
-  transform: translateY(-50px);
+  margin-top: 4em;
+  width: 100%;
+  padding: 0 4em;
+  text-align: center; /* optional: center the text */
+  transform: translateY(-50px); /* can be adjusted or removed */
 }
 .quote h5 {
   /* letter-spacing: 2px;
   word-spacing: 2px; */
-  font-size: 1em;
+  font-size: 1.6em;
   margin-top: 20px;
-  color: #0009;
-  line-height: 20px;
+  word-spacing: 3px;
+  color: rgb(3, 3, 3);
+  line-height: 40px;
 }
 .quote p {
   align-self: flex-start;
   font-size: 2.3em;
-  color: #040404;
+  background: linear-gradient(to right, #f94a38, #df286f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
+
 .quote span {
   font-size: 1.7em;
 }
@@ -373,137 +388,93 @@ div.student_data_container
 }
  */
 
-.carousel-container {
-  width: 80%;
-  max-width: 1000px;
+/* placement-seciton */
+
+.testimonial-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-p {
+  font-size: 14px;
+}
+.student_data_container {
+  display: flex;
+  padding: 2em;
+  height: 300px;
+  border-radius: 1em;
+  gap: 2em;
+  box-shadow: 2px 3px 16px 6px #bcbcbc;
+  border: 2px solid #f2f2f2;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.slider {
   position: relative;
+  max-width: 991px;
   margin: auto;
   overflow: hidden;
-  background: transparent;
-  filter: drop-shadow(2px 3px 12px white);
+  border-radius: 10px;
 }
 
-.carousel-track {
+.slides {
   display: flex;
-  padding: 1em;
-  height: 500px;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease;
+  width: 300%;
 }
 
-div.card_info {
+.cards {
+  width: 309px;
+  padding: 20px;
+  box-sizing: border-box;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  flex-direction: row;
-  background: linear-gradient(to right, #f94a38, #df286f);
-  border: 0.03px solid rgb(217, 216, 216);
-  border-radius: 25px;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 15px;
-  flex-shrink: 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cards img {
+  width: 120px;
+  border-radius: 10px;
+}
+
+.cards-p {
   text-align: center;
 }
 
-div.card_top {
-  position: relative;
+.buttons {
+  position: absolute;
+  top: 50%;
   width: 100%;
-  height: 200px;
-  margin: 0 1em;
-  border-radius: 25px 25px 0 25px;
-}
-
-.card_info .review_Card_img {
-  width: 120px;
-  height: 120px;
-  margin-top: 40px;
-  border: 5px solid white;
-  border-radius: 50%;
-  background: #4884f7;
-}
-
-div.card_detail {
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
-  background: white;
-  width: 256%;
-  padding: 0 1em;
-  border-radius: 12px;
-  margin: 2em;
-  height: 400px;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
+  justify-content: space-between;
+  transform: translateY(-50%);
 }
 
-.card_info h3 {
-  margin: 15px 0 10px;
-  color: #222;
-}
-
-.card_info .review_domain {
-  font-weight: 200;
-  font-size: 1em;
-}
-
-.card_info p {
-  margin-top: 1em;
-  color: #000000;
-  font-weight: 200;
-  font-size: 15px;
-  margin-bottom: 15px;
-}
-
-.card button {
-  background: linear-gradient(to right, #f94a38, #df286f);
-  color: white;
+.btn {
+  background: rgba(255, 255, 255, 0.7);
   border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 10px;
   cursor: pointer;
-  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.carousel-pagination {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+.btn:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+h1 {
+  text-align: center;
   margin: 20px 0;
 }
-.carousel-pagination .dot {
-  width: 12px;
-  height: 12px;
-  background-color: #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.carousel-pagination .dot.active {
-  background-color: #007bff;
-}
 
-.card_detail.expanded {
-  max-height: 1000px;
-}
-
-.nav button {
-  position: absolute;
-  top: 45%;
-  background: none;
-  border: none;
-  font-size: 30px;
-  cursor: pointer;
-  color: #6c63ff;
-}
-
-.nav .prev {
-  left: 10px;
-}
-
-.nav .next {
-  right: 10px;
-}
 /* morquee */
 .marqu {
   text-align: center;
@@ -669,40 +640,9 @@ footer .btn:hover {
     justify-self: center;
     text-align: center;
   }
-  .quote p {
-    margin-top: 3em;
-    font-size: 30px;
-  }
 
   .quote h5 {
     font-size: 0.8em;
-  }
-
-  div.card_info {
-    flex-direction: column;
-  }
-
-  .card_info p {
-    margin-top: 1em;
-    color: #000000;
-    font-weight: 200;
-    font-size: 10px;
-    margin-bottom: 15px;
-  }
-
-  div.card_detail {
-    display: inline;
-    width: auto;
-    margin: 12px;
-    align-items: center;
-    background: white;
-    border-radius: 12px;
-    height: 400px;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    .service-container .right-side img {
-      width: 90%;
-    }
   }
 
   .service-container .right-side img {
