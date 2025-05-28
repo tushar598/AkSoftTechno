@@ -333,4 +333,59 @@
       <br />
     </div>
   </body>
+  <script>
+    const cards = document.querySelectorAll(".Chapter_parts .card");
+  
+    function resetCards() {
+      cards.forEach((card) => {
+        card.style.opacity = "1";
+        card.style.filter = "none";
+        card.style.transform = "scale(1)";
+        card.style.zIndex = "0";
+      });
+    }
+  
+    cards.forEach((card) => {
+      card.addEventListener("mouseenter", () => {
+        cards.forEach((c) => {
+          if (c !== card) {
+            c.style.opacity = "0.3";
+            c.style.filter = "blur(2px)";
+          } else {
+            c.style.opacity = "1";
+            c.style.filter = "none";
+            c.style.transform = "scale(1.03)";
+            c.style.zIndex = "1";
+          }
+        });
+      });
+  
+      card.addEventListener("mouseleave", () => {
+        resetCards();
+      });
+  
+      // Touch device support (click)
+      card.addEventListener("click", (e) => {
+        e.stopPropagation(); // prevent from triggering document click
+        cards.forEach((c) => {
+          if (c !== card) {
+            c.style.opacity = "0.3";
+            c.style.filter = "blur(2px)";
+          } else {
+            c.style.opacity = "1";
+            c.style.filter = "none";
+            c.style.transform = "scale(1.03)";
+            c.style.zIndex = "1";
+          }
+        });
+      });
+    });
+  
+    // Reset when clicking outside any card
+    document.addEventListener("click", (e) => {
+      if (![...cards].some((card) => card.contains(e.target))) {
+        resetCards();
+      }
+    });
+  </script>
 </html>

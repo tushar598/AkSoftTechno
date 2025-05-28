@@ -234,10 +234,31 @@ div.card {
   font-size: 2.5em;
 }
 
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Goes up */
+  }
+  100% {
+    transform: translateY(0); /* Back to original */
+  }
+}
+
 .courseImage img {
   width: 150px;
   filter: drop-shadow(5px 10px 30px rgb(115, 114, 114));
+  animation: floatUpDown 3s ease-in-out infinite;
+  transition: transform 0.4s ease;
 }
+
+.courseImage img:hover {
+  transform: scale(1.05);
+}
+
+
+
 
 /* Chapters
  */
@@ -253,7 +274,7 @@ div.card {
 
 .Chapters {
   background: white;
-  margin: 10em 0;
+  margin-top: 10em ;
 }
 
 .Chapters h3 {
@@ -273,13 +294,27 @@ div.card {
 
 .Chapter_parts {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   flex-wrap: wrap;
   align-items: center;
   gap: 3em;
   padding: 10em 3em;
   padding-top: 3em;
 }
+
+/* Smooth transition for cards */
+.Chapter_parts .card {
+  transition: all 0.3s ease;
+  z-index: 0;
+}
+
+
+/* Optional: card scale on hover */
+.Chapter_parts .card:hover {
+  transform: scale(1.02);
+  z-index: 1;
+}
+
 
 .card-data-container {
   display: flex;

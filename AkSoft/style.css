@@ -202,7 +202,7 @@ nav ul li a:hover::after {
 }
 
 .logo img {
-  width: 120px;
+  width: 200px;
   cursor: pointer;
   transition: all 1s;
 }
@@ -235,7 +235,7 @@ button {
 }
 
 .content-wrapper {
-
+ margin-top: 3em;
   display: flex
   ;
       flex-direction: column;
