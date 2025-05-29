@@ -231,7 +231,7 @@ button {
 .quote h5 {
   /* letter-spacing: 2px;
   word-spacing: 2px; */
-  font-size: 1.6em;
+  font-size: 1.5em;
   margin-top: 20px;
   word-spacing: 3px;
   color: rgb(3, 3, 3);
@@ -239,7 +239,7 @@ button {
 }
 .quote p {
   align-self: flex-start;
-  font-size: 2.3em;
+  font-size: 1em;
   background: linear-gradient(to right, #f94a38, #df286f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -248,7 +248,7 @@ button {
 }
 
 .quote span {
-  font-size: 1.7em;
+  font-size: 1em;
 }
 .quote .play {
   margin-top: 20px;
@@ -263,9 +263,8 @@ button {
 }
 
 .Placed {
-  margin-top: 6em;
-  margin-bottom: 2em;
-  font-weight: 700;
+  margin-bottom: 3em;
+  font-weight: 900;
   display: flex;
   background: linear-gradient(to right, #f94a38, #df286f);
   -webkit-background-clip: text;
@@ -274,7 +273,6 @@ button {
   color: transparent;
   justify-content: center;
   align-items: center;
-  text-transform: uppercase;
 }
 
 /* company sliding seciton  */
@@ -337,12 +335,12 @@ button {
 
 .PlaceStudent {
   text-align: center;
-  margin: 2em 0;
+  margin-top: 7em ;
 }
 
 .PlaceStudent h3 {
-  font-size: 2em;
-  text-transform: uppercase;
+  font-size: 3em;
+  font-family: 'Ancizar Sans';
   background: linear-gradient(to right, #f94a38, #df286f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -390,63 +388,51 @@ div.student_data_container
 
 /* placement-seciton */
 
-.testimonial-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.testimonial-p {
-  font-size: 14px;
-}
-.student_data_container {
-  display: flex;
-  padding: 2em;
-  height: 300px;
-  border-radius: 1em;
-  gap: 2em;
-  box-shadow: 2px 3px 16px 6px #bcbcbc;
-  border: 2px solid #f2f2f2;
-  width: 50%;
-  align-items: center;
-  justify-content: center;
-}
 .slider {
   position: relative;
-  max-width: 991px;
+width: 100%;
   margin: auto;
   overflow: hidden;
   border-radius: 10px;
 }
 
+.slider_card {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+}
+
 .slides {
   display: flex;
-  transition: transform 0.5s ease;
-  width: 300%;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
 }
 
 .cards {
-  width: 309px;
-  padding: 20px;
+  min-width: 100%; /* Only 1 card visible at a time */
   box-sizing: border-box;
+  padding: 14px 0 ;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #ccc;
+  border:none;
   border-radius: 10px;
-  margin: 10px;
   background: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .cards img {
   width: 120px;
-  border-radius: 10px;
+  border-radius: 50%;
 }
 
 .cards-p {
   text-align: center;
 }
+
 
 .buttons {
   position: absolute;
