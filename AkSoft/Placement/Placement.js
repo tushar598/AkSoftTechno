@@ -1,3 +1,79 @@
+
+
+// Hamburger menu functionality
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+function toggleMenu() {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+}
+
+hamburger.addEventListener('click', toggleMenu);
+
+// Close mobile menu when clicking on links
+document.querySelectorAll('.mobile-nav-link, .mobile-btn').forEach(link => {
+    link.addEventListener('click', function(e) {
+        // Close menu
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('active');
+    });
+});
+
+
+// Close menu when clicking outside
+document.addEventListener('click', function(e) {
+    if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('active');
+    }
+});
+
+// Close menu on escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('active');
+    }
+});
+
+// Handle window resize
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('active');
+    }
+});
+
+// Add smooth hover animations for desktop links
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-2px)';
+    });
+    
+    link.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+    });
+});
+
+// Button click animations
+document.querySelectorAll('.btn, .mobile-btn').forEach(button => {
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Add click animation
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+            this.style.transform = '';
+        }, 150);
+        
+        console.log('Button clicked:', this.textContent);
+    });
+});
+
+
+
+
 var i = 2;
 function switchTAB() {
   var x = document.getElementById("list-switch");
@@ -40,65 +116,8 @@ function login() {
   b.style.color = "#000";
 }
 
-// CheckBox Function
-function goFurther() {
-  if (document.getElementById("chkAgree").checked == true) {
-    document.getElementById("btnSubmit").style =
-      "background: linear-gradient(to right, #FA4B37, #DF2771);";
-  } else {
-    document.getElementById("btnSubmit").style = "background: lightgray;";
-  }
-}
 
-function searchdisplay() {
-  document.getElementById("searchpanel").style.display = "block";
-}
 
-function display(n) {
-  var img1 = document.getElementById("img1");
-  var img2 = document.getElementById("img2");
-  var img3 = document.getElementById("img3");
-  var img4 = document.getElementById("img4");
-  var s1 = document.getElementById("s1");
-  var s2 = document.getElementById("s2");
-  var s3 = document.getElementById("s3");
-  var s4 = document.getElementById("s4");
 
-  img1.style = "display: none;";
-  img2.style = "display: none;";
-  img3.style = "display: none;";
-  img4.style = "display: none;";
-  s1.style = "background: #DF2771; color: #FFF;";
-  s2.style = "background: #DF2771; color: #FFF;";
-  s3.style = "background: #DF2771; color: #FFF;";
-  s4.style = "background: #DF2771; color: #FFF;";
-
-  if (n == 1) {
-    img1.style = "display: block;";
-    s1.style = "background: #E5E8EF; color: #DF2771;";
-  }
-  if (n == 2) {
-    img2.style = "display: block;";
-    s2.style = "background: #E5E8EF; color: #DF2771;";
-  }
-  if (n == 3) {
-    img3.style = "display: block;";
-    s3.style = "background: #E5E8EF; color: #DF2771;";
-  }
-  if (n == 4) {
-    img4.style = "display: block;";
-    s4.style = "background: #E5E8EF; color: #DF2771;";
-  }
-}
-
-function sideMenu(side) {
-  var menu = document.getElementById("side-menu");
-  if (side == 0) {
-    menu.style = "transform: translateX(0vh); position:fixed;";
-  } else {
-    menu.style = "transform: translateX(-100%);";
-  }
-  side++;
-}
 
 

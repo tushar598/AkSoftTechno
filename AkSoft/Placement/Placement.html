@@ -25,7 +25,7 @@
       href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&display=swap"
       rel="stylesheet"
     />
-    <script type="text/javascript" src="./Placement.js"></script>
+  
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
@@ -34,51 +34,60 @@
     ></script>
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <header id="header">
-      <nav>
-        <div class="logo">
-          <img src="../img/logo-bg-removed.png" alt="logo" />
+     <!-- Navigation Bar -->
+     <header id="header">
+      <nav class="Navbar">
+        <div class="navbar-header">
+            <div class="logo">
+                <img src="../img/logo-bg-removed.png" alt="logo"/>
+              </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="../index.html" class="nav-Link">Home </a></li>
+                    <li><a href="../index.html#Course_section" class="nav-Link">Course</a></li>
+                    <li><a href="#" class="nav-Link">Placement</a></li>
+                    <li><a href="../index.html#about_section" class="nav-Link">About-us</a></li>
+                    <li><a href="../index.html#footer-contact" class="nav-Link">Contact</a></li>
+                </ul>
+                
+                <div class="nav-buttons">
+                    <a href="../login.html" class="Btn btn-Secondary">Get Started</a>
+                    
+                </div>
+            </div>
+            
+            <!-- Hamburger Menu -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../index.html#Course_section">Courses</a></li>
-          <li><a href="#">Placement</a></li>
-          <li><a href="../index.html#about_section">About Us</a></li>
-          <li><a href="../index.html#contactus_section">Contact US</a></li>
-        </ul>
+        
+        <!-- Mobile Menu Dropdown -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-nav-links">
+                <li><a href="../index.html#about_section" class="mobile-nav-link">About </a></li>
+                <li><a href="#" class="mobile-nav-link">Placement</a></li>
+                <li><a href="../index.html#Course_section" class="mobile-nav-link">Cources</a></li>
+                <li><a href="../index.html#contactus_section" class="mobile-nav-link">Contact</a></li>
+                <li><a href="../index.html#footer-contact" class="mobile-nav-link">Location</a></li>
+            </ul>
+            
+            <div class="mobile-buttons">
+                <a href="../login.html" class="mobile-Btn mobile-btn-Primary">Get started</a>
+            </div>
+        </div>
+    </nav>
 
-        <a class="get-started" href="../login.html">Get Started</a>
-        <img
-          src="../images/icon/menu.png"
-          class="menu"
-          onclick="sideMenu(0)"
-          alt="menu"
-        />
-      </nav>
-
-      <div class="side-menu" id="side-menu">
-        <div class="close" onclick="sideMenu(1)">
-          <img src="../images/icon/close.png" alt="" />
-        </div>
-        <div class="user">
-          <img src="../img/logo-bg-removed.png" alt="Username" />
-        </div>
-        <ul>
-          <li><a href="../index.html#about_section">About</a></li>
-          <li><a href="../index.html#team_section">Portfolio</a></li>
-          <!-- <li><a href="#team_section">Team</a></li> -->
-          <li><a href="../index.html#course_seciton">Courses</a></li>
-          <li><a href="../index.html#contactus_section">Contact</a></li>
-          <li><a href="#location">Location</a></li>
-        </ul>
-      </div>
     </header>
 
     <main>
       <div
-        class="container head-container"
-        style="max-width: 100vw !important"
+        class=" head-container"
+        style="max-width: 99vw !important"
       ></div>
 
       <div class="quote">
@@ -95,17 +104,7 @@
         </h5>
       </div>
 
-      <div
-        class="content_div"
-        style="
-          background-color: rgba(238, 238, 238, 0.934);
-          padding: 5em 0;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          align-items: center;
-        "
-      >
+  
         <!-- Sliding Information -->
         <div class="Placed">
           <h3
@@ -157,133 +156,160 @@
           </div>
         </div>
         <br />
-        <!-- <div
-   
-           class="slider"
-           reverse="true"
-           style="--width: 200px; --height: 120px; --quantity: 9"
-         >
-           <div class="list">
-             <div class="item" style="--position: 1">
-               <img src="../PlaceCompany/INFY_BIG .png" alt="" />
-             </div>
-             <div class="item" style="--position: 2">
-               <img src="../PlaceCompany/ACN_BIG .png" alt="" />
-             </div>
-             <div class="item" style="--position: 3">
-               <img src="../PlaceCompany/BIT_WISE_BIG.bak.png" alt="" />
-             </div>
-             <div class="item" style="--position: 4">
-               <img src="../PlaceCompany/CTSH_BIG .png" alt="" />
-             </div>
-             <div class="item" style="--position: 5">
-               <img src="../PlaceCompany/TCS.NS_BIG.bak.png" alt="" />
-             </div>
-             <div class="item" style="--position: 6">
-               <img src="../PlaceCompany/ACN_BIG .png" alt="" />
-             </div>
-             <div class="item" style="--position: 7">
-               <img src="../PlaceCompany/CTSH_BIG .png" alt="" />
-             </div>
-             <div class="item" style="--position: 8">
-               <img src="../PlaceCompany/INFY_BIG .png" alt="" />
-             </div>
-             <div class="item" style="--position: 9">
-               <img src="../PlaceCompany/TCS.NS_BIG.bak.png" alt="" />
-             </div>
-           </div>
-         </div>  -->
+       
 
-        <!-- Placement section -->
-        <div class="PlaceStudent">
-          <h3>Our Gallery</h3>
-          <p class="testimonial-p">
-            "I just wanted to show you glimpse of my proud and happy moments."
+
+
+        <div
+        class="content_div"
+        style="
+          background-color: rgba(238, 238, 238, 0.934);
+          padding: 5em 0;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+        "
+      >
+        
+        <!-- Reviews by Students -->
+    <div class="review">
+      <div class="diffSection" id="review_section">
+        <center>
+          <p
+            style="
+            margin-top: 2em;
+              font-size: 5vh;
+              font-family: Ancizar Sans;
+              font-weight: 700;
+              padding-bottom: 40px;
+              color: #2e3d49;
+              background: linear-gradient(to right, #f94a38, #df286f);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              color: transparent;
+            "
+          >
+            What Students Say About Us?
           </p>
-        </div>
+        </center>
+      </div>
 
-        <div class="slider_card">
-          <div class="slider">
-            <div class="slides" id="slides">
-              <div class="cards">
-                <img
-                  src="../img/placements/arun-pandya-r-img.jpg"
-                  alt="Designer"
-                />
-                <h2>Arun Pandey</h2>
-                <h4>Designer</h4>
-                <p class="cards-p">
-                 
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <!-- Cards -->
+          <div class="card card_info" ">
+            
+            <div class="card_detail">
+             <div class="card-head">
+              <img
+              src="../img/placements/tanishka-vaidya-r-img.jpg"
+              alt="Jones Gail"
+              class="review_Card_img"
+            />
+            
+             </div>
+               <div class="card-body">
+                <h3> Tanishka Vaidya</h3>
+                <p>
+                  I cannot thank Aseem sir enough for the knowledge and guidance he gave me that helped me get placed in 4 MNCs including the top MNCs like TCS and Wipro. I joined AKSOFT when I was in second semester to learn programming. I have learned C, C++, Java, Data Structure and DBMS from sir. He made coding simple and interesting for students. He taught us practically by coding in front of us and even showing us the ways to remove errors. Thank you very much sir.
                 </p>
-              </div>
-              <div class="cards">
-                <img
-                  src="../img/placements/mayur-choudhary-r-img.jpg"
-                  alt="Developer"
-                />
-                <h2>Developer</h2>
-                <p class="cards-p">
-                  Coding innovation drive to the future of technology.
-                </p>
-              </div>
-              <div class="cards">
-                <img
-                  src="../img/placements/nikhil-prajapari-r-img.jpg"
-                  alt="Marketer"
-                />
-                <h2>Marketer</h2>
-                <p class="cards-p">
-                  Strategic marketing transforms brand narratives.
-                </p>
-              </div>
-              <div class="cards">
-                <img
-                  src="../img/placements/sakshi-sharma-r-img.jpg"
-                  alt="Marketer"
-                />
-                <h2>Marketer</h2>
-                <p class="cards-p">
-                  Strategic marketing transforms brand narratives.
-                </p>
-              </div>
-
-              <div class="cards">
-                <img
-                  src="../img/placements/shivani-nigam-r-img.jpg"
-                  alt="Marketer"
-                />
-                <h2>Marketer</h2>
-                <p class="cards-p">
-                  Strategic marketing transforms brand narratives.
-                </p>
-              </div>
-              <div class="cards">
-                <img
-                  src="../img/placements/tanishka-vaidya-r-img.jpg"
-                  alt="Marketer"
-                />
-                <h2>Marketer</h2>
-                <p class="cards-p">
-                  Strategic marketing transforms brand narratives.
-                </p>
-              </div>
-              <div class="cards">
-                <img
-                  src="../img/placements/yashaswi-vaidya-r-img.jpg"
-                  alt="Marketer"
-                />
-                <h2>Marketer</h2>
-                <p class="cards-p">
-                  Strategic marketing transforms brand narratives.
-                </p>
-              </div>
+               </div>
             </div>
+           
           </div>
-          <div class="buttons">
-            <button class="btn prev">❮</button>
-            <button class="btn next">❯</button>
+
+          <div class="card card_info">
+            
+            <div class="card_detail">
+                 
+              <div class="card-head">
+                <img src="../img/placements/mayur-choudhary-r-img.jpg" alt="Rose Bush" 
+                class="review_Card_img"/>
+                
+              </div>
+             <div class="card-body">
+              <h3>  Mayur Choudhary</h3>
+              <p>
+                I would like to thank Assem sir for their guidance and support which helped me in reaching to this platform. I joined AKSOFT when I was in second semester and learned C, C++, Java, Data Structure under his guidance. Thank you for being so creative and passionate about your teaching, and how you communicate ideas and unique life lessons with us. You made coding so interesting and simple for us. Thank you sir for your guidance.
+              </p>
+             </div>
+            </div>
+          
           </div>
-        </div>
+
+          <div class="card card_info">
+           
+            <div class="card_detail">
+             <div class="card-head">
+              <img src="../img/placements/shivani-nigam-r-img.jpg" alt="Jones Gail" 
+              class="review_Card_img"/>
+           
+             </div>
+             <div class="card-body">
+              <h3>Shivani Nigam</h3>
+              <p>
+                I'm very thankful to Aseem sir for his constant support.It was excellent learning experience and it allowed me to confirm my interest in pursuing my career as a software engineer.
+              </p>
+            </div>
+             </div>
+           
+          </div>
+
+          <!-- <div class="card">
+            <div class="card_top">
+              <span class="overlay"></span>
+              <img src="https://i.pravatar.cc/100?img=56" alt="Jones Gail" />
+            </div>
+            <div class="card_detail">
+              <h3>David Dell</h3>
+              <p>
+                The lorem text the section that contains header with having open
+                functionality. Lorem dolor sit amet consectetur adipisicing
+                elit.
+              </p>
+            </div>
+            <button>Show More</button>
+          </div>
+
+          <div class="card">
+            <div class="card_top">
+              <span class="overlay"></span>
+              <img src="https://i.pravatar.cc/100?img=56" alt="Jones Gail" />
+            </div>
+            <div class="card_detail">
+              <h3>David Dell</h3>
+              <p>
+                The lorem text the section that contains header with having open
+                functionality. Lorem dolor sit amet consectetur adipisicing
+                elit.
+              </p>
+            </div>
+            <button>Show More</button>
+          </div>
+
+          <div class="card">
+            <div class="card_top">
+              <span class="overlay"></span>
+              <img src="https://i.pravatar.cc/100?img=56" alt="Jones Gail" />
+            </div>
+            <div class="card_detail">
+              <h3>David Dell</h3>
+              <p>
+                The lorem text the section that contains header with having open
+                functionality. Lorem dolor sit amet consectetur adipisicing
+                elit.
+              </p>
+            </div>
+            <button>Show More</button>
+          </div>-->
+        </div> 
+        
+        <div class="carousel-pagination"></div>
+      </div>
+    </div>
+
       </div>
     </main>
 
@@ -364,38 +390,73 @@
     <div class="copyright-Section">
       <hr />
       <p class="rights-text">
-        Copyright © 2025 Created By his student ,Mr. Assem Kanungo All Rights
+        Copyright © 2025, Mr. Assem Kanungo All Rights
         Reserved.
       </p>
       <br />
     </div>
   </body>
-  <script>
+
+   <script src="../Placement/Placement.js"></script>
+<script>  
+    const track = document.querySelector(".carousel-track");
+    const cards = document.querySelectorAll(".card_info");
+    const pagination = document.querySelector(".carousel-pagination");
+
     let currentIndex = 0;
-    const slides = document.getElementById("slides");
-    const cards = document.querySelectorAll(".cards");
-    const totalCards = cards.length;
+    let interval = setInterval(slideNext, 5000);
 
-    document.querySelector(".next").addEventListener("click", () => {
-      if (currentIndex < totalCards - 1) {
-        currentIndex++;
-      } else {
-        currentIndex = 0; // Loop back
-      }
-      updateSlider();
-    });
+    // Add these missing variables
+    const totalPages = cards.length;
+    let currentPage = 0;
 
-    document.querySelector(".prev").addEventListener("click", () => {
-      if (currentIndex > 0) {
-        currentIndex--;
-      } else {
-        currentIndex = totalCards - 1; // Loop to end
-      }
-      updateSlider();
-    });
-
-    function updateSlider() {
-      slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    function slideNext() {
+      currentIndex = (currentIndex + 1) % cards.length;
+      currentPage = currentIndex;
+      updateCarousel();
     }
-  </script>
+
+    function slidePrev() {
+      currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+      currentPage = currentIndex;
+      updateCarousel();
+    }
+
+    function updateCarousel() {
+      const offset = currentIndex * (cards[0].offsetWidth + 30);
+      track.style.transform = `translateX(-${offset}px)`;
+      highlightActiveDot();
+    }
+
+    function createPaginationDots() {
+      pagination.innerHTML = "";
+      for (let i = 0; i < totalPages; i++) {
+        const dot = document.createElement("span");
+        dot.classList.add("dot");
+        if (i === currentPage) dot.classList.add("active");
+        dot.addEventListener("click", () => {
+          currentPage = i;
+          currentIndex = i;
+          updateCarousel();
+          clearInterval(interval);
+          setTimeout(() => {
+            interval = setInterval(slideNext, 3000);
+          }, 20000);
+        });
+        pagination.appendChild(dot);
+      }
+    }
+
+    function highlightActiveDot() {
+      document.querySelectorAll(".dot").forEach((dot, i) => {
+        dot.classList.toggle("active", i === currentPage);
+      });
+    }
+
+   
+  
+
+    createPaginationDots();
+   
+  </script> 
 </html>
