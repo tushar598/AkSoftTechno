@@ -304,7 +304,7 @@ nav ul li a:hover::after {
 }
 
 .btn-Secondary:hover {
-  background: linear-gradient(to right, #fb2f18, #ff0167); 
+  background: linear-gradient(to right, #fb2f18, #ff0167);
 }
 
 .btn-Primary {
@@ -483,8 +483,8 @@ nav ul li a:hover::after {
   justify-content: space-between;
   align-items: center;
   height: 700px;
-  background: linear-gradient(rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.4)),
-    url("../AkSoft/images/extra/Gemini_Generated_Image_s6whx1s6whx1s6wh.png");
+  background: linear-gradient(to right, #1d1d1d39, #00000053),
+    url("../AkSoft/images/extra/homeImg.png");
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;

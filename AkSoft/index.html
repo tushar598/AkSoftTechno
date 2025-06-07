@@ -572,7 +572,7 @@
           
             <h2 style="font-size: 31px; margin: 5px 0;">Arun Pandya</h2>
             <h3 style="font-size: 20px; margin: 5px 0;"> TCS Digital</h3>
-            <h4 style="font-size: 16px; margin: 5px 0;">Role: Designer</h4>
+            <h4 style="font-size: 16px; font-weight: 300;  margin: 5px 0;">Package:- 3-4 LPA</h4>
            
           
           </div>
@@ -587,7 +587,7 @@
           
             <h2 style="font-size: 31px; margin: 5px 0;">Mayur Choudhary</h2>
             <h3 style="font-size: 20px; margin: 5px 0;"> TCS Digital</h3>
-            <h4 style="font-size: 16px; margin: 5px 0;">Role: Graphic Designer</h4>
+            <h4 style="font-size: 16px;font-weight: 300; margin: 5px 0;">Package:- 3-4 LPA</h4>
             
           
           </div>
@@ -603,7 +603,8 @@
           
             <h2 style="font-size: 31px; margin: 5px 0;">Nikhil Prajapati</h2>
             <h3 style="font-size: 20px; margin: 5px 0;"> TCS Digital</h3>
-            <h4 style="font-size: 16px; margin: 5px 0;">Role: Graphic Designer</h4>
+            <h4 style="font-size: 16px; font-weight: 300; margin: 5px 0;">Package:- 3-4 LPA
+            </h4>
            
           
           </div>
@@ -618,7 +619,7 @@
           
             <h2 style="font-size: 31px; margin: 5px 0;">Sakshi Sharma</h2>
             <h3 style="font-size: 20px; margin: 5px 0;"> TCS Digital</h3>
-            <h4 style="font-size: 18px; margin: 5px 0;">Role: Graphic Designer</h4>
+            <h4 style="font-size: 18px;font-weight: 300; margin: 5px 0;">Package:- 3-4 LPA</h4>
             
           
           </div>
@@ -633,7 +634,7 @@
           
             <h2 style="font-size: 31px; margin: 5px 0;">Shivani Nigam</h2>
             <h3 style="font-size: 20px; margin: 5px 0;"> TCS Digital</h3>
-            <h4 style="font-size: 18px; margin: 5px 0;">Role: Graphic Designer</h4>
+            <h4 style="font-size: 18px; font-weight: 300; margin: 5px 0;">Package:- 3-4 LPA</h4>
           
           </div>
 
@@ -647,7 +648,7 @@
           
             <h2 style="font-size: 31px; margin: 5px 0;">Tanishka Vaidya</h2>
             <h3 style="font-size: 20px; margin: 5px 0;"> TCS Digital</h3>
-            <h4 style="font-size: 18px; margin: 5px 0;">Role: Graphic Designer</h4>
+            <h4 style="font-size: 18px; font-weight: 300; margin: 5px 0;">Package:- 3-4 LPA</h4>
           
           </div>
 
@@ -663,7 +664,7 @@
           
             <h2 style="font-size: 31px; margin: 5px 0;">Yashaswi Vaidya</h2>
             <h3 style="font-size: 20px; margin: 5px 0;"> TCS Digital</h3>
-            <h4 style="font-size: 18px; margin: 5px 0;">Role: Graphic Designer</h4>
+            <h4 style="font-size: 18px;font-weight: 300; margin: 5px 0;">Package:- 3-4 LPA</h4>
           
           </div>
         </div>
@@ -840,7 +841,7 @@
     let interval = setInterval(slideNext, 3000);
 
     // Add these missing variables
-    const totalPages = cards.length;
+    const tota LPAges = cards.length;
     let currentPage = 0;
 
     function slideNext() {
@@ -863,7 +864,7 @@
 
     function createPaginationDots() {
       pagination.innerHTML = "";
-      for (let i = 0; i < totalPages; i++) {
+      for (let i = 0; i < tota LPAges; i++) {
         const dot = document.createElement("span");
         dot.classList.add("dot");
         if (i === currentPage) dot.classList.add("active");
@@ -893,7 +894,7 @@
    
   </script>     -->
   <script src="../AkSoft/script.js"></script>
-  <script> 
+  <!-- <script> 
     let currentIndex = 0;
     const slides = document.getElementById("slides");
     const cards = document.querySelectorAll(".cards");
@@ -935,5 +936,59 @@
       clearInterval(autoSlide);
       autoSlide = setInterval(showNextSlide, 5000);
     }
-  </script> 
-</html>
+  </script>  -->
+  <script> 
+    let currentIndex = 0;
+    const slides = document.getElementById("slides");
+    const cards = document.querySelectorAll(".cards");
+    const totalCards = cards.length;
+  
+    const nextBtn = document.querySelector(".next");
+    const prevBtn = document.querySelector(".prev");
+  
+    const minViewTime = 5000; // 10 seconds in milliseconds (adjust up to 25000 as needed)
+    let canNavigate = true; // flag to control navigation lock
+  
+    function updateSlider() {
+      slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+  
+  
+  
+    function showNextSlide() {
+      if (!canNavigate) return;
+      currentIndex = (currentIndex + 1) % totalCards;
+      updateSlider();
+      lockNavigation();
+    }
+  
+    function showPrevSlide() {
+      if (!canNavigate) return;
+      currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+      updateSlider();
+      lockNavigation();
+    }
+  
+    nextBtn.addEventListener("click", () => {
+      showNextSlide();
+      resetAutoSlide();
+    });
+  
+    prevBtn.addEventListener("click", () => {
+      showPrevSlide();
+      resetAutoSlide();
+    });
+  
+    // Auto-slide every 10 seconds
+    let autoSlide = setInterval(showNextSlide, 5000);
+  
+    function resetAutoSlide() {
+      clearInterval(autoSlide);
+      autoSlide = setInterval(showNextSlide, 10000);
+    }
+  
+   
+  </script>
+  
+
+  </html>
