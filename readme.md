@@ -1,7 +1,7 @@
 ## AkSoft (-inovate-learn-succed-)
 An educational website for students and programmers 😊😊😊  
 
-![](./AkSoft/images/courses/aksoft.png)
+![](./AkSoft/images/extra/readmeImg.png)
 
 Try this out::  
 
