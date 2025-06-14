@@ -479,7 +479,7 @@ div.card:hover {
 }
 
 div.card-body {
-  height: 280px;
+  height: 25em;
 }
 
 div.cInfo p {

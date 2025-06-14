@@ -3,14 +3,17 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
-* {
+/* Reset and Base Styles */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html,body {
-
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -177,7 +180,7 @@ header {
 }
 
 .btn-Secondary:hover {
-  background: linear-gradient(to right, #fb2f18, #ff0167); 
+  background: linear-gradient(to right, #fb2f18, #ff0167);
 }
 
 .btn-Primary {
@@ -347,10 +350,6 @@ header {
   cursor: pointer;
   transition: all 1s;
 }
-
-
-
-
 
 .head-container {
   padding-top: 205px;
@@ -531,6 +530,10 @@ div.student_data_container
  */
 
 /* placement-seciton */
+
+.review{
+  width: 95%;
+}
 .carousel-container {
   width: 90%;
   max-width: 1020px;
@@ -553,8 +556,8 @@ div.card_info {
   justify-content: space-around;
   flex-direction: row;
   /* background: linear-gradient(to right, #f94a38, #df286f); */
-background: transparent;
-border: none;
+  background: transparent;
+  border: none;
   /* border: 0.03px solid rgb(217, 216, 216);
   border-radius: 25px; */
   width: 100%;
@@ -583,7 +586,7 @@ div.card_detail {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('../PlaceCompany/26129713_soft_red_low_poly_pattern_background.svg');
+  background: url("../PlaceCompany/26129713_soft_red_low_poly_pattern_background.svg");
   background-size: cover;
   padding: 0 1em;
   border-radius: 12px;
@@ -596,7 +599,7 @@ div.card_detail {
 .card_info h3 {
   font-size: 2em;
   font-weight: 800;
-  padding-bottom: 1em;
+  padding-bottom: 0.1em;
   color: #222;
 }
 
@@ -617,8 +620,6 @@ div.card_detail {
   padding: 0 3em;
 }
 
-.card-body {
-}
 
 .card button {
   background: linear-gradient(to right, #f94a38, #df286f);
@@ -795,10 +796,12 @@ footer .right-col h1 {
 }
 
 footer .right-col iframe {
-  width: 30em;
+  width: 100%;
+  max-width: 30em;
   height: 300px;
-  border: 0;
 }
+
+
 
 footer .txtb {
   flex: 1;
@@ -882,7 +885,6 @@ footer .btn:hover {
     display: none;
   }
 
-
   .right-col {
     display: flex;
     justify-content: center;
@@ -952,7 +954,7 @@ footer .btn:hover {
     margin-top: 1em;
     color: #000000;
     font-weight: 200;
-    font-size: 1em;
+    font-size: 0.9em;
     margin-bottom: 15px;
   }
 
@@ -964,8 +966,8 @@ footer .btn:hover {
     margin: 1em 14px;
     height: 29em;
     align-items: center;
-    background: url('../PlaceCompany/26129713_soft_red_low_poly_pattern_background.svg');
-  background-size: cover;
+    background: url("../PlaceCompany/26129713_soft_red_low_poly_pattern_background.svg");
+    background-size: cover;
     border-radius: 12px;
     overflow: hidden;
     transition: max-height 0.3s ease;
