@@ -531,7 +531,7 @@ div.student_data_container
 
 /* placement-seciton */
 
-.review{
+.review {
   width: 95%;
 }
 .carousel-container {
@@ -619,7 +619,6 @@ div.card_detail {
 .card-head {
   padding: 0 3em;
 }
-
 
 .card button {
   background: linear-gradient(to right, #f94a38, #df286f);
@@ -801,8 +800,6 @@ footer .right-col iframe {
   height: 300px;
 }
 
-
-
 footer .txtb {
   flex: 1;
   padding: 18px 40px;
@@ -954,7 +951,7 @@ footer .btn:hover {
     margin-top: 1em;
     color: #000000;
     font-weight: 200;
-    font-size: 0.9em;
+    font-size: 0.66em;
     margin-bottom: 15px;
   }
 
